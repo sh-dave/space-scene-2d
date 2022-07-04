@@ -55,7 +55,7 @@ export class Space2D {
       vert: fullscreenQuadVertex,
       frag: starsFragment,
       attributes: {
-        position: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
+        pos: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
       },
       uniforms: {
         starTexture,
@@ -76,7 +76,7 @@ export class Space2D {
       vert: fullscreenQuadVertex,
       frag: backgroundFragment,
       attributes: {
-        position: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
+        pos: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
       },
       uniforms: {
         depth: this.regl.prop<any, any>("depth"),
@@ -109,7 +109,7 @@ export class Space2D {
       vert: fullscreenQuadVertex,
       frag: nebulaFragment,
       attributes: {
-        position: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
+        pos: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
       },
       uniforms: {
         depth: this.regl.prop<any, any>("depth"),
@@ -152,7 +152,7 @@ export class Space2D {
       vert: fullscreenQuadVertex,
       frag: starFragment,
       attributes: {
-        position: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
+        pos: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
       },
       uniforms: {
         position: this.regl.prop<any, any>("position"),
@@ -183,7 +183,7 @@ export class Space2D {
       vert: fullscreenQuadVertex,
       frag: pasteFragment,
       attributes: {
-        position: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
+        pos: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
       },
       uniforms: {
         texture: this.regl.prop<any, any>("texture"),
@@ -201,7 +201,7 @@ export class Space2D {
       vert: fullscreenQuadVertex,
       frag: accumulateFragment,
       attributes: {
-        position: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
+        pos: this.regl.buffer([-1, -1, 1, -1, 1, 1, -1, -1, 1, 1, -1, 1]),
       },
       uniforms: {
         incidentTexture: this.regl.prop<any, any>("incidentTexture"),
